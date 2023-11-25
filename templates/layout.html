@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="icon" href="{% static 'images/icon.jpg' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .ank{
+            color: #6d0b0b;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<button type="button" class="btn btn-danger"><a href="{% url 'homepage' %}" class="">Home</a></button>
+<button type="button" class="btn btn-success"><a href="{% url 'gala' %}" class="">Gallery</a></button>
+<button type="button" class="btn btn-info"><a href="{% url 'about' %}" class=""></a>Aboutus</button>
+{#<a href="{% url 'homepage' %}">Home</a>#}
+{#<a href="{% url 'gala' %}">gallery</a>#}
+{#<a href="{% url'about' %}">About</a>#}
+
+
+<div class="container-fluid p-5 bg-primary text-center">
+    <h2>Toshiba Web Development Class</h2>
+</div>
+
+{% block body %}
+
+{% endblock %}
+
+<footer class="bg-primary p-5 ">
+    <a href="" class="ank">Designed by E-Tute</a>
+</footer>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
